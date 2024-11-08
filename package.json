@@ -1,0 +1,35 @@
+{
+  "name": "transform-user-data-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bxsck/transform-user-data-api.git",
+  "author": "Teerapat (Bosck) <56102118+bxsck@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.4.1",
+    "@grpc/proto-loader": "^0.6.4",
+    "@types/axios-mock-adapter": "^1.10.4",
+    "axios": "^1.7.7",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.4",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
+    "axios-mock-adapter": "^2.1.0",
+    "jest": "^29.7.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "test": "jest"
+  }
+}
